@@ -81,6 +81,25 @@ public final class GroovyDemoManager {
                     750L, 200L,
                     GroovyIcon.Sandwich, GroovyColor.Yellow));
 
+            productEntities.add(ProductBuilder.build(102L,
+                    "Cofee Mug w/Custom Design",
+                    "Requires at least 48 hours to fulfill custom order",
+                    120L, 100L,
+                    GroovyIcon.CoffeeMug, GroovyColor.Red));
+
+            productEntities.add(ProductBuilder.build(103L,
+                    "Metal Folding Chair",
+                    "Weights approximately 12 lbs",
+                    220L, 100L,
+                    GroovyIcon.WoodenChair, GroovyColor.Blue));
+
+            productEntities.add(ProductBuilder.build(104L,
+                    "10-pack of AA Batteries",
+                    "Medium-quality batteries",
+                    120L, 100L,
+                    GroovyIcon.BatteryPack, GroovyColor.Orange));
+
+
             // Insert entities into database instance.
             DatabaseHelper.getInstance().getDatabase().getProductDao()
                     .insertProducts(
