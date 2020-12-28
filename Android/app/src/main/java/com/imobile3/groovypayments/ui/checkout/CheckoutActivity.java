@@ -92,8 +92,8 @@ public class CheckoutActivity extends BaseActivity {
         mProgressDialog = new ProgressDialog(this);
 
         // Web Services must be initialized for payment processing.
-        WebServiceManager.getInstance().init(
-                MainApplication.getInstance().getWebServiceConfig());
+//        WebServiceManager.getInstance().init(
+//                MainApplication.getInstance().getWebServiceConfig());
 
         loadPaymentTypes();
     }
