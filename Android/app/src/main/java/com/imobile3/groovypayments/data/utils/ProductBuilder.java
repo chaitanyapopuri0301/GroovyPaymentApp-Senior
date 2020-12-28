@@ -26,8 +26,8 @@ public final class ProductBuilder {
         result.setNote(note);
         result.setUnitPrice(unitPrice);
         result.setCost(cost);
-        result.setIconId(icon.id);
-        result.setColorId(color.id);
+        result.setIconId(icon.drawableRes);
+        result.setColorId(color.colorRes);
         return result;
     }
 }
